@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #1f1f1f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    background-image: url('Tennis-Court.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.geschiedenis {
+    background-image: url('tennispotje.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.spelregels {
+    background-image: url('scheidsrechter tennis.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.vereniging-page {
+    background-image: url('etc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-page {
+    background-image: url('alcaraz.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #0b522c;
+    border-bottom: 3px solid #244b31;
+}
+
+nav .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#loginBtn {
+    background: #ffcc00;
+    color: #0b522c;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+#loginBtn:hover,
+#loginBtn:focus-visible {
+    filter: brightness(0.9);
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    z-index: 200;
+}
+
+.modal[hidden] {
+    display: none !important;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: min(480px, 100%);
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    padding-right: 2.5rem;
+    color: #0b522c;
+}
+
+.modal-content label,
+.modal-content input,
+.modal-content button:not(.modal-close) {
+    display: block;
+    width: 100%;
+}
+
+.modal-content label {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.modal-content input {
+    margin-bottom: 0.8rem;
+    padding: 0.55rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.modal-content button[type="submit"] {
+    background: #0b522c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0.55rem;
+    cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover,
+.modal-content button[type="submit"]:focus-visible {
+    background: #114e2f;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    width: auto;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.06);
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+    background: rgba(0,0,0,0.12);
+}
+
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: #fff;
+    color: #0b522c;
+}
+
+main {
+    margin: 0;
+    padding: 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.panel h1,
+.panel h2 {
+    margin-top: 0;
+    color: #0b522c;
+    text-align: center;
+}
+
+.panel h2 {
+    color: #000;
+}
+
+.panel p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.membership-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.8rem;
+}
+
+.membership-table th,
+.membership-table td {
+    border: 1px solid #cdd5cd;
+    padding: 0.65rem;
+    text-align: left;
+}
+
+.membership-table thead {
+    background: #e8f3ea;
+}
+
+footer {
+    background: #0b522c;
+    color: #fff;
+    text-align: center;
+    padding: 0.8em 1em;
+    margin-top: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        justify-content: center;
+    }
+    nav a {
+        font-size: 0.95rem;
+    }
+}

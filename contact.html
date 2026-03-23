@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site J.M.E. - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+    <nav>
+        <div class="nav-inner">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="geschiedenis.html">Geschiedenis van Tennis</a></li>
+                <li><a href="spelregels.html">Spelregels</a></li>
+                <li><a href="vereniging.html">Mijn vereniging</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="contact" class="panel">
+            <h1>Contact</h1>
+            <p>Meld je hieronder aan om Joris in te maken met een goed potje tennis.</p>
+            <div class="main-action" style="text-align:center; margin-top:1rem;">
+                <button id="loginBtn" type="button">Aanmelden</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="signupModal" hidden>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" type="button" aria-label="Sluiten">×</button>
+            <h2>Aanmelden</h2>
+            <form id="signupForm">
+                <label for="emailInput">E-mailadres</label>
+                <input id="emailInput" type="email" name="email" placeholder="-" required>
+                <button type="submit">Verzenden</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="aanmelden.js"></script>
+
+    <footer>
+        <p>&copy; 2026 Ultiem zakelijke sport. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
