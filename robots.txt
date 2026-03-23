@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://JensBiemans.github.io/tennis-club-website/sitemap.xml
