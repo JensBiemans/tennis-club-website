@@ -1,22 +1,22 @@
 # ETC Ede Tennis Club Website
 
-A professional tennis club website showcasing the history, rules, and information about ETC Ede.
+Een professionele tennisclubwebsite met de geschiedenis, spelregels en informatie over ETC Ede.
 
-## Features
-- **Home Page**: Welcome and overview
-- **History**: Geschiedenis van Tennis
-- **Rules**: Complete tennis rules explanation
-- **Club Info**: ETC Ede membership and facilities
-- **Contact**: Signup form with modal
+## Kenmerken
+- **Homepagina**: Welkom en overzicht
+- **Geschiedenis**: Geschiedenis van tennis
+- **Spelregels**: Volledige uitleg van de tennisregels
+- **Verenigingsinfo**: Lidmaatschap en faciliteiten van ETC Ede
+- **Contact**: Aanmeldformulier met modal
 
-## Live Website
-Visit the site at: **https://JensBiemans.github.io/tennis-club-website/**
+## Live website
+Bezoek de site op: **https://JensBiemans.github.io/tennis-club-website/**
 
-## Files
-- `index.html` - Home page
-- `geschiedenis.html` - Tennis history
-- `spelregels.html` - Tennis rules
-- `vereniging.html` - Club information
-- `contact.html` - Contact & signup
-- `aanmelden.js` - Modal functionality
-- `style.css` - Styles and background images
+## Bestanden
+- `index.html` - Homepagina
+- `geschiedenis.html` - Geschiedenis van tennis
+- `spelregels.html` - Tennisregels
+- `vereniging.html` - Verenigingsinformatie
+- `contact.html` - Contact en aanmelding
+- `aanmelden.js` - Modalfunctionaliteit
+- `style.css` - Stijlen en achtergrondafbeeldingen
